@@ -22,3 +22,6 @@ type myType={
 }
 //x object of type myType
 var x : myType;
+
+
+var arr4: Array<string>=["Am","ra"]//generic type array
