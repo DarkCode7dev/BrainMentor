@@ -25,3 +25,4 @@ var x : myType;
 
 
 var arr4: Array<string>=["Am","ra"]//generic type array
+var  a6:[string,number]=["Ami",44]
