@@ -26,3 +26,21 @@ var x : myType;
 
 var arr4: Array<string>=["Am","ra"]//generic type array
 var  a6:[string,number]=["Ami",44]
+//Enum 
+enum CarType{
+    SUV="SUV",
+    SEDAN="SEDAN"
+}
+
+console.log(CarType.SEDAN)
+console.log(CarType['SEDAN'])
+
+
+
+const MONDAY = 2;
+enum Days{
+SUNDAY=10,MONDAY,TUESDAY
+}
+
+var day:Days=Days.MONDAY;
+console.log(day)
