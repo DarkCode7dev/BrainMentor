@@ -44,3 +44,12 @@ SUNDAY=10,MONDAY,TUESDAY
 
 var day:Days=Days.MONDAY;
 console.log(day)
+
+
+
+function show(x: number, y:number):number{return x+y;}
+function disp():void{}
+var result = show(10,20);
+var add:(x:number,y:number)=>number;
+add=show;
+result=add(10,20)
