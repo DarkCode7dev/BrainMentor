@@ -53,3 +53,29 @@ var result = show(10,20);
 var add:(x:number,y:number)=>number;
 add=show;
 result=add(10,20)
+
+
+//day4
+
+type Emp={
+    id:number,name:string,salary:number
+}
+function takeEmp(emp:Emp){
+    console.log('Emp is ',emp)
+
+}
+
+takeEmp({id:1001,name:'ram',salary:111111})
+
+
+type Fn=(x:number,y:number)=>number;
+
+function takeFn(a:Fn){
+
+}
+
+
+///This function never gets completed
+function iNeverCompleteSuccessfully():never{
+    throw new Error('Error Generated');
+}
