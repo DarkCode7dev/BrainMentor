@@ -25,6 +25,7 @@ class SavingAccount extends Account{
     }
 
     print():void{
+      //  super.print(); //if weuse this line then parent class print will work
         console.log(`Limit ${this.limit} ROI ${this.roi}`)
     }
 }
