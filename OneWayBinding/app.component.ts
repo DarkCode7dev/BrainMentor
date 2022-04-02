@@ -12,4 +12,13 @@ export class AppComponent {
   plus():void{
 this.count++
   }
+
+
+
+
+  takeInput(event:any){
+let name = event.target.value
+this.title= name;
+console.log(name)
+  }
 }
