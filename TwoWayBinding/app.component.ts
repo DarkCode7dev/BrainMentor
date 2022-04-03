@@ -1,10 +1,25 @@
-{{title}}   ==>example of string interpollation use this  
+import { Component } from '@angular/core';
 
-<br>
-==================================================
-<p>This is example of Property Binding</p>
-<p [innerHtml]="title"> This is example of Property Binding</p> 
-<br>
-  
-  <input type="text" [(ngModel)]="myname">
-{{myname}}
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  title = 'ganna';
+  count:number=0;
+  myname: any
+
+  plus():void{
+this.count++
+  }
+
+
+
+
+  takeInput(event:any){
+let name = event.target.value
+this.title= name;
+console.log(name)
+  }
+}
