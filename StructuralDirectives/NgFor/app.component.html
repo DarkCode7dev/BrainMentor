@@ -1,0 +1,8 @@
+<h1>{{ title }}</h1>
+<h3>Fruits are {{ fruits }}</h3>
+<ul>
+    <li *ngFor="let fruit of fruits; let i = index">
+      {{ i + 1 }} {{ fruit | titlecase }}
+    </li>
+  </ul>
+  
