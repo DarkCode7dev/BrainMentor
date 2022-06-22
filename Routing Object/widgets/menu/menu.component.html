@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Pizza Shop</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/"
+          routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }" >Deals</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pizzas/20/3" routerLinkActive="active">Pizzas</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/sides" class="nav-link" routerLinkActive="active">Sides</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/desserts" class="nav-link" routerLinkActive="active">Desserts</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/drinks" class="nav-link" routerLinkActive="active">Drinks</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
